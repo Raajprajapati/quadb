@@ -1,13 +1,14 @@
-.form{
+.form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 700px;
     margin: 20px auto;
+    padding: 20px;
     background-color: #ffffff;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
-h1{
+.form h1 {
     text-align: center;
 }
 
@@ -20,49 +21,63 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   margin: 5px;
+    margin: 5px;
+
 }
 
-form label{
+form label {
     margin-right: 10px;
 }
 
-.genres{
+.form-item {
+    padding-bottom: 2px;
+    border-bottom: 1px solid grey;
+}
+
+
+.timeselect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genres {
     margin: 0 2px;
 }
 
-.ticketquantity{
+.ticketquantity {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.ticketquantity button{
-    margin: 0 5px;
+.ticketquantity span {
+    margin: 0 10px;
 }
-.btns{
+
+.btns {
     display: flex;
     justify-content: space-between;
 }
 
-.btns button{
-   width: 50%;
+.btns button {
+    width: 50%;
 }
 
-.confirm{
+.confirm {
     margin-right: 2px;
 }
-.cancel{
+
+.cancel {
     background-color: red;
     margin-left: 2px;
 }
 
-.cancel:hover{
+.cancel:hover {
     background-color: rgb(168, 3, 3);
 }
 
 @media screen and (max-width: 738px) {
-    .form{
+    .form {
         width: 90%;
         padding: 5px;
     }

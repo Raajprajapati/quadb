@@ -1,14 +1,17 @@
 .moviecard {
-    width: 400px;
-    height: 600px;
+    width: 300px;
     padding: 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    margin: 10px;  
+    margin: 10px; 
+    border: 1px solid #7a08c1; 
+    border-radius: 3px;
+    background-color: #ffffff;
 }
 
 .moviecard img {
     width: 100%;
-    height: 550px;
+    height: 380px;
+    border: 1px solid #7a08c1;
     object-fit: cover;
 }
 .img {
@@ -16,21 +19,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    padding: 10px;
+    
 }
 .rating{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
     background-color: #ffffff;
     padding: 2px;
     text-align: center;
+    border-bottom-right-radius:3px;
 }
 
 .title{
     text-align: center;
+
 }
 
 .title h2{ 
-    text-transform: uppercase;
+    color: #7a08c1;
+    letter-spacing: 1px;
+    font-size: 20px;
 }

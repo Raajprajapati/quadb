@@ -43,7 +43,7 @@ button{
     padding: 10px;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #04a366;
+    background-color: #7a08c1;
     font-weight: bold;
     cursor: pointer;
     outline: none;
@@ -56,7 +56,7 @@ button:active{
 
 
 button:hover{
-    background-color: #047147;
+    background-color: #63049e;
 }
 
 
@@ -82,5 +82,4 @@ button:hover{
         padding: 10px;
     }
 
-    
 }

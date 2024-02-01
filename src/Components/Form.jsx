@@ -31,40 +31,50 @@ const Form = ({ cancelTicket, data }) => {
 
             <h1>Ticket Booking</h1>
             <form onSubmit={(e) => { handleSubmit(e) }}>
-                <div className="movie">
+                <div className="movie form-item">
                     <p>Movie: </p>
                     <div className="name">
-                        {data?.name} 
+                        {data?.name}
                         ({data?.genres?.map((val, ind) => {
                             return <span className='genres' key={ind}> {val}</span>
                         })} )</div>
                 </div>
 
-                <div className="date">
+                <div className="date form-item">
                     <p>Date: </p>
                     <input type="date" name="date" id="date" min={today} value={date} onChange={(e) => setDate(e.target.value)} />
                 </div>
 
-                <div className="time">
+                <div className="time form-item">
                     <p>Time: </p>
                     <div className="timeselect">
-                        <input type="radio" name="time" id="time1" required/>
-                        <label htmlFor="time1">11:00AM</label>
+                        <div className='time-item'>
+                            <input type="radio" name="time" id="time1" required />
+                            <label htmlFor="time1">11:00AM</label>
+                        </div>
 
-                        <input type="radio" name="time" id="time2" />
-                        <label htmlFor="time2">3:00PM</label>
+                        <div className='time-item'>
+                            <input type="radio" name="time" id="time2" />
+                            <label htmlFor="time2">3:00PM</label>
+                        </div>
 
-                        <input type="radio" name="time" id="time3" />
-                        <label htmlFor="time3">6:00PM</label>
+                        <div className='time-item'>
+                            <input type="radio" name="time" id="time3" />
+                            <label htmlFor="time3">6:00PM</label>
+                        </div>
 
-                        <input type="radio" name="time" id="time4" />
-                        <label htmlFor="time4">9:30PM</label>
+                        <div className='time-item'>
+                            <input type="radio" name="time" id="time4" />
+                            <label htmlFor="time4">9:30PM</label>
 
-                        <input type="radio" name="time" id="time5" />
-                        <label htmlFor="time5">6:00AM</label>
+                        </div>
+                        <div className='time-item'>
+                            <input type="radio" name="time" id="time5" />
+                            <label htmlFor="time5">6:00AM</label>
+                        </div>
                     </div>
                 </div>
-                <div className="quantity">
+                <div className="quantity form-item">
                     <p>Quantity: </p>
                     <div className="ticketquantity">
                         <button onClick={() => { changeQuantity(-1) }} type='button'>-</button>
@@ -75,7 +85,7 @@ const Form = ({ cancelTicket, data }) => {
 
                 <div className="btns">
                     <button type='submit' className='confirm'>confirm</button>
-                    <button className='cancel' type='button' onClick={() => cancelTicket()}>cancel booking</button>
+                    <button className='cancel' type='button' onClick={() => cancelTicket()}>cancel</button>
                 </div>
             </form>
         </div>
