@@ -1,0 +1,86 @@
+.moviedetails{
+    display: flex;
+}
+
+.moviedetails .details div{
+    display: flex;
+}
+.goback{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.left{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.left img{
+    width: 80%;
+    padding:10px;
+    object-fit: contain;
+}
+
+.right{
+    width: 60%;
+}
+
+.details{
+    list-style: none;
+}
+
+.d-item{
+    margin: 10px 0;
+}
+
+.d-heading{
+    font-weight: bold;
+}
+
+
+button{
+    padding: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #04a366;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+button:active{
+    outline: none;
+}
+
+
+button:hover{
+    background-color: #047147;
+}
+
+
+@media screen and (max-width: 738px) {
+    .left img{
+        width: 100%;
+        padding:10px;
+    }
+    .moviedetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    
+    .left img{
+        width: 60%;
+    }
+    
+    .right{
+        width: 100%;
+        padding: 10px;
+    }
+
+    
+}

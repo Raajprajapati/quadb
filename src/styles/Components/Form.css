@@ -1,0 +1,69 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   margin: 5px;
+}
+
+form label{
+    margin-right: 10px;
+}
+
+.genres{
+    margin: 0 2px;
+}
+
+.ticketquantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticketquantity button{
+    margin: 0 5px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button{
+   width: 50%;
+}
+
+.confirm{
+    margin-right: 2px;
+}
+.cancel{
+    background-color: red;
+    margin-left: 2px;
+}
+
+.cancel:hover{
+    background-color: rgb(168, 3, 3);
+}
+
+@media screen and (max-width: 738px) {
+    .form{
+        width: 90%;
+        padding: 5px;
+    }
+}

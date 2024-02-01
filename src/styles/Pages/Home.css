@@ -1,0 +1,10 @@
+.movies-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.allmovies{
+    margin: 10px auto;
+    text-align: center;
+}
